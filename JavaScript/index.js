@@ -5,7 +5,7 @@ var mensajeEncriptado=document.getElementById('mensaje-encriptado');
 var parrafo=document.querySelector('.parrafo');
 var contentBtn=document.querySelector('.content-btn');
 
-var letras = ['a','e','i','o','u'];
+var letras = ['e','i','a','o','u'];
 var claves = ["enter","imes","ai","ober","ufat"];
 
 var texto = document.getElementById('mensaje')
