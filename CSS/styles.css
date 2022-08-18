@@ -1,0 +1,245 @@
+body{
+    background:#CCCCCC;
+    width: auto;
+}
+
+header{
+    background: #282a35;
+    
+}
+.caja{
+    padding: 3em 0;
+    width: 100%;
+    margin: 0 25px ;
+}
+header img{
+    width: 60px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+header h2{
+    font-size:40px;
+    color: gainsboro;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 1em;
+}
+.texto-secundario{
+    color: darkgray;
+    font-size:20px;
+    font-weight: bold;
+}
+/*-----------------------------*/
+
+main{
+    background: linear-gradient(#FEFEFE,#888888 );
+    padding-left:2%;
+    padding-right:2%;
+    height:800px;
+}
+.content{
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    padding: 3em 1%;
+    max-width: 45%;
+    float: left;
+    margin-top: 3em ;
+}
+.content-mensaje{
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    min-width: 0;    
+}
+.content-botones{
+    position: relative;
+    display: flex;
+    width:100%;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    min-width: 0;
+    margin-top: 50%;
+}
+#mensaje{
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0A3871;
+    background:#FEFEFE;
+    font-size: 32px;
+    border:none;
+    text-transform: lowercase;
+    resize: none;
+    border-radius: 10px;
+}
+.boton,.boton-encriptar,.boton-desencriptar,.btn-copiar{
+    width:320px;
+    height:70px;
+    border: none;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: 24px;
+}
+.boton-encriptar{
+    background:#0A3871;
+    color:white;
+    margin: 0 50px 0 0 ;
+}
+.boton-encriptar:hover{
+    background: #00234d;
+    transform: scale(1.20);
+}
+.boton-desencriptar{
+    background:#FEFEFE  ;
+    color:black;
+}
+.boton-desencriptar:hover{
+    background: #7d7d7d ;
+    transform: scale(1.20); 
+}
+
+.content-texto-encriptado{
+    position: relative;
+    text-align: center;
+    min-width: 360px;
+    width: 100%;
+    padding: 1em 1%;
+    max-width: 45%;
+    float: right;
+}
+
+.centrar{
+    position: relative;
+    margin: 0 auto;
+    width: 350px;
+}
+
+#mensaje-encriptado{
+    width: 350px;
+    height:750px;
+    border: none;
+    resize: none;
+    box-shadow: 0 20px 29px 0 rgba(0,0,0,.22);
+    border-radius: 10px;
+    background-image: url("../images/Muñeco.png") ;
+    background-repeat:no-repeat;
+    background-position-y: 180px;
+    background-position-x: 0px;  
+    font-size: 24px; 
+    padding: 20px 0 0 20px;
+}
+.parrafo{
+    position: absolute;
+    top: 65%;
+    left: 0;
+    border: 0;
+
+}
+.parrafo p:not(.texto-secundario){
+    color: black;
+    font-size:32px;
+    font-weight:bold;
+    margin: 0 0 10px 0;
+}
+.content-btn{
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    border: 0;
+    color: black;
+    font-weight:bold;
+    padding: 0 0 0 10px;
+}
+.btn-copiar{
+    background:#0A3871;
+    width:290px;
+    color:white;
+}
+.btn-copiar:hover{
+    background: #00234d;
+    transform: scale(1.20); 
+}
+footer{
+    clear: left;
+    text-align: center;
+    width:auto;
+    background: #888888;
+    
+}
+footer div{
+    padding:80px;
+}
+@media screen and (max-width:480px){
+    header{
+        width: auto;
+    }
+    .caja{
+        width: auto;
+    }
+    main{
+        height: auto;
+    }
+    .content{
+        margin-top:0;
+        padding: 20px 0 0 0;
+        float:none;
+        margin: 0 auto;
+        width:auto;
+    }
+    .content-mensaje{
+
+    }
+    .content-botones{
+        display: block;
+        width: auto;
+    }
+    .boton-encriptar{
+        margin-bottom:20px;
+    }
+    .content-texto-encriptado{
+        float:none;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+    }
+    .centrar{
+        margin: 0 4px;
+    }
+    #mensaje-encriptado{
+        width:315px;
+        height:220px;
+        padding: 0;
+        background-image: none;
+        border-radius: 30px;
+        padding: 10px 0 0 10px;
+    }
+    .parrafo{
+        top: 20%;
+        padding: 0 60px;
+    }
+    .parrafo p:not(.texto-secundario){
+        color: black;
+        font-size:26px;
+        font-weight:bold;
+        margin: 0 0 5px 0;
+    }
+    .texto-secundario{
+        font-size:16px
+    }
+    .content-btn{
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        padding: 0 0 0 5px;
+    }
+}
+
+

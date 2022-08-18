@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+
+        <div class="caja">
+            <h1><img src="images/Vector.png" alt=""></h1>
+            <h2>Encriptador - Alura</h2>
+            <h3 class="texto-secundario">Herramienta para encriptar palabras</h3>
+        </div>
+    </header>
+    <main>
+            <div class="content">
+                <div class="content-mensaje">
+                    <input type="text" id="mensaje" placeholder="ingrese texto aqui" >
+                </div>
+                <div class="content-botones">
+                    <button type="submit" onclick="encriptar()" class="boton-encriptar">Encriptar</button>
+                    <button type="submit" onclick="desencriptar()" class="boton-desencriptar">Desencriptar</button>
+                </div>    
+            </div >
+
+            <div class="content-texto-encriptado">
+                <div class="centrar">
+                    <textarea name="" id="mensaje-encriptado" cols="30" rows="10" readonly></textarea>
+                    <div class="parrafo">
+                        <p>Ningun mensaje fue encontrado</p>
+                        <p class="texto-secundario">Ingrese el texto que desee encriptar o desencriptar</p>
+                    </div>
+                    <div style="display:none" class="content-btn">
+                        <button  onclick="copiarAlPortapapeles()" class="btn-copiar">Copiar</button>
+                    </div>
+                </div>
+            </div>        
+    </main>
+    <footer>
+            <div>
+                <img src="images/logo-oracle.png" alt="">
+                <p>Hecho: por Briant Maldonado Macias</p>
+            </div>
+    </footer>
+    <script src="JavaScript/index.js"></script>
+    
+</body>
+</html>
