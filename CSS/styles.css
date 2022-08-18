@@ -215,11 +215,13 @@ footer div{
     }
     #mensaje-encriptado{
         width:315px;
-        height:220px;
+        height:320px;
+        max-width:420px;
         padding: 0;
         background-image: none;
         border-radius: 30px;
         padding: 10px 0 0 10px;
+        text-align: justify;
     }
     .parrafo{
         top: 20%;
@@ -235,10 +237,9 @@ footer div{
         font-size:16px
     }
     .content-btn{
-        position: absolute;
-        top: 60%;
-        width: 100%;
-        padding: 0 0 0 5px;
+        position: relative;
+        
+        padding: 20px 0 0 5px;
     }
 }
 

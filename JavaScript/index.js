@@ -76,7 +76,7 @@ function ocultarElementos() {
 
 var txtSoloNumeros = document.getElementById("mensaje")
 txtSoloNumeros.addEventListener("input", function (event) {
-    validarTextoEntrada(this, "[a-z,. ]")
+    validarTextoEntrada(this, "[a-z,.ñ ]")
 })
 
 function validarTextoEntrada(input, patron) {
