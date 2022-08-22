@@ -116,14 +116,8 @@ main{
     float: right;
 }
 
-.centrar{
-    position: relative;
-    margin: 0 auto;
-    width: 350px;
-}
-
 #mensaje-encriptado{
-    width: 350px;
+    width: 400px;
     height:750px;
     border: none;
     resize: none;
@@ -136,12 +130,17 @@ main{
     font-size: 24px; 
     padding: 20px 0 0 20px;
 }
+
 .parrafo{
     position: absolute;
+    width:100%;
     top: 65%;
     left: 0;
     border: 0;
-
+}
+.centrar{
+    width: 400px;
+    margin: 0 auto;
 }
 .parrafo p:not(.texto-secundario){
     color: black;
@@ -195,9 +194,6 @@ footer div{
         margin: 0 auto;
         width:auto;
     }
-    .content-mensaje{
-
-    }
     .content-botones{
         display: block;
         width: auto;
@@ -211,7 +207,8 @@ footer div{
         padding: 20px 0 0 0;
     }
     .centrar{
-        margin: 0 4px;
+        margin: 0 auto;
+        width:315px;
     }
     #mensaje-encriptado{
         width:315px;
@@ -225,7 +222,6 @@ footer div{
     }
     .parrafo{
         top: 20%;
-        padding: 0 60px;
     }
     .parrafo p:not(.texto-secundario){
         color: black;
@@ -239,7 +235,7 @@ footer div{
     .content-btn{
         position: relative;
         
-        padding: 20px 0 0 5px;
+        padding: 20px 0 0 0;
     }
 }
 
